@@ -1,0 +1,338 @@
+
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.card{
+	border-radius:10px;
+}
+.cardcount .card-body {
+    -ms-flex: 1 1 auto;
+    display: flex;
+    flex: 1 1 auto;
+    padding: .5rem;
+	
+}
+.cardcontent{
+	padding: 5px 10px;
+}
+.cardcontent p, .cardcontent h3{
+	margin-bottom:0rem;
+}
+.iconst{
+	
+	    margin-top: 18px;
+    font-size: 40px!important;
+}
+.icondiv{
+	    width: 65px;
+       border-radius: 5px;
+    text-align: center;
+	color:#F4793C;
+    background-color: #fce3d6;
+}
+.icondiv2{
+	    width: 65px;
+       border-radius: 5px;
+    text-align: center;
+	color:#02a1cf;
+    background-color: #ccecf6;
+}
+.icondiv3{
+	    width: 65px;
+       border-radius: 5px;
+    text-align: center;
+	color:#8156b9;
+    background-color: #e6ddf1;
+}
+.icondiv4{
+	    width: 65px;
+       border-radius: 5px;
+    text-align: center;
+	color:#5db240;
+    background-color: #def0d9;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+       background: #ffffff;
+    color: #525151;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #fff;
+}
+
+#sidebar ul.components {
+    padding: 20px 15px;
+    
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #888888;
+	border-radius: 8px;
+    background: rgb(244, 121, 60,0.4);
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #888888;
+	    border-radius: 8px;
+    background: #fce3d6;
+}
+#sidebar ul li.active>a>i
+{
+	border-radius: 8px;
+   color: #F4793C;
+    
+}
+#sidebar ul li>a>i {
+    
+    padding-right: 10px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+.wt80{	
+    width: 81.5%!important;
+}
+.content {
+   width: 100%;
+   
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sidebarCollapse{
+	display:none;
+}
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    width: 250px;
+    position: fixed;
+    top: 68px;
+}
+#sidebarCollapse{
+	display:block;
+}
+.wt80{	
+    width: 100%!important;
+}
+.navbar {
+    position: fixed;
+    width: inherit;
+    z-index: 999;
+}
+}
+
+.brand-image{
+	width: 175px;
+}
+    .main-content{
+		padding:20px;
+	}
+	.bg-light {
+    background-color: #ffffff!important;
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.avatar img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    border-radius: 1000px;
+}
+.plr0{
+	padding-right: 0px;
+    padding-left: 0px;
+}
+.table td, .table th {
+    padding: .75rem 2px;
+}
+.avatar-xs {
+    width: 24px;
+}
+.scrl{
+	    min-height: 200px;
+    max-height: 210px;
+	
+}
+/*table-responsive scroll*/
+.table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+    .table-responsive::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+
+    .table-responsive::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #F4793C;
+    border-radius: 10px;
+    border: 2px solid #f3f3f3;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}

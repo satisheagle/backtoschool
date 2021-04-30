@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="img/Group.png">
+    <title>lobotos</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+
+            <div class="sidebar-header">
+
+                <img src="img/Group.png" alt="Logo" class="brand-image">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#"><i class="fa fa-tachometer"></i>Dashboaards</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-users"></i>Students</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i> Teacher</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-list"></i>Active Session's</a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="content wt80">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-user"></i>Jon Name</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Eng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-content">
+                <h3>Dashboaard</h3>
+                <div class="row cardcount">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icondiv">
+                                    <i class="fa fa-graduation-cap iconst"></i>
+                                </div>
+                                <div class="cardcontent">
+                                    <h3>111</h3>
+                                    <p>Total School's.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icondiv2">
+                                    <i class="fa fa-user iconst"></i>
+                                </div>
+                                <div class="cardcontent">
+                                    <h3>1111</h3>
+                                    <p>Total Teacher's.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icondiv3">
+                                    <i class="fa fa-users iconst"></i>
+                                </div>
+                                <div class="cardcontent">
+                                    <h3>11111</h3>
+                                    <p>Total Student's.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icondiv4">
+                                    <i class="fa fa-list iconst"></i>
+                                </div>
+                                <div class="cardcontent">
+                                    <h3>11</h3>
+                                    <p>Active Session's.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row mt-4">
+                    <div class="col-md-8 col-sm-12">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">School Status</h5>
+                                <canvas id="column-chart" height="400"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 plr0">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Active Session's</h5>
+
+                                <img src="img/activesessions.png" alt="" style="width: 340px;height: 435px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-8 col-sm-12">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">School Performance</h5>
+                                <canvas id="area-chart" height="500"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 plr0">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Today's Birthday</h5>
+
+                                <div class="table-responsive scrl">
+                                    <table class="table table-hover mb-0">
+
+                                        <tbody>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="text-truncate">
+                                                    <span class="avatar avatar-xs"><img src="img/avatar-s-4.png" alt="avatar"></span> <span>JonJon Name</span>
+                                                </td>
+                                                <td class="text-truncate"><span class="tag tag-success">5th-A </span></td>
+                                                <td class="valign-middle">
+                                                    <button class="btn-success">11 Years</button>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="assets/chart.min.js"></script>
+    <script src="assets/charts/chartjs/bar/column.js"></script>
+    <script src="assets/charts/chartjs/line/line-area.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('wt80');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
